@@ -337,58 +337,60 @@ var health1 = new healthBar(x1 - 60, y1  - 150, healthBarWidth - 60, healthBarHe
 var health2 = new healthBar(x1 + 100, y1  - 150, healthBarWidth - 60, healthBarHeight, health);
 
 //Main Code
-    var draw = function() {
-        background(51, 51, 59);
-    //---------------------------------------------------------------------------------
-    //---------------------------------------------------------------------------------
-        var ringPos = 35;
-        var drawRing = function(){
+var ringPos = 35;
+var drawRing = function(){
         //Bottom
         fill(31, 28, 31);
-        rect(ringPos+30-20,ringPos+290,300,40);
+        rect(ringPos+30-20,ringPos+310,300,40);
         //Ring Floor
         fill(86, 135, 132);
-        rect(ringPos+30-20,ringPos+130,300,160);
+        rect(ringPos+30-20,ringPos+150,300,160);
         //Blue Corner
         fill(59, 71, 199);
-        rect(ringPos+30-20,ringPos+80,8,50);
-        rect(ringPos+322-20,ringPos+80,8,50);
+        rect(ringPos+30-20,ringPos+100,8,50);
+        rect(ringPos+322-20,ringPos+100,8,50);
         //Red Corner
         fill(247, 32, 32);
-        rect(ringPos+322-20,ringPos+240,8,50);
-        rect(ringPos+30-20,ringPos+240,8,50);
+        rect(ringPos+322-20,ringPos+260,8,50);
+        rect(ringPos+30-20,ringPos+260,8,50);
         //Rope Rings
         fill(46, 42, 42);
-        ellipse(ringPos+44-20,ringPos+85,12,10);
-        ellipse(ringPos+44-20,ringPos+102,12,10);
-        ellipse(ringPos+44-20,ringPos+120,12,10);
-        ellipse(ringPos+316-20,ringPos+85,12,10);
-        ellipse(ringPos+316-20,ringPos+102,12,10);
-        ellipse(ringPos+316-20,ringPos+120,12,10);
-        ellipse(ringPos+44-20,ringPos+245,12,10);
-        ellipse(ringPos+44-20,ringPos+263,12,10);
-        ellipse(ringPos+44-20,ringPos+280,12,10);
-        ellipse(ringPos+316-20,ringPos+245,12,10);
-        ellipse(ringPos+316-20,ringPos+263,12,10);
-        ellipse(ringPos+316-20,ringPos+280,12,10);
+        ellipse(ringPos+44-20,ringPos+105,12,10);
+        ellipse(ringPos+44-20,ringPos+122,12,10);
+        ellipse(ringPos+44-20,ringPos+140,12,10);
+        ellipse(ringPos+316-20,ringPos+105,12,10);
+        ellipse(ringPos+316-20,ringPos+122,12,10);
+        ellipse(ringPos+316-20,ringPos+140,12,10);
+        ellipse(ringPos+44-20,ringPos+265,12,10);
+        ellipse(ringPos+44-20,ringPos+283,12,10);
+        ellipse(ringPos+44-20,ringPos+300,12,10);
+        ellipse(ringPos+316-20,ringPos+265,12,10);
+        ellipse(ringPos+316-20,ringPos+283,12,10);
+        ellipse(ringPos+316-20,ringPos+300,12,10);
         //Top Rope
         fill(227, 20, 20);
-        rect(ringPos+41-20,ringPos+85,5,155);
-        rect(ringPos+313-20,ringPos+85,5,155);
-        rect(ringPos+50-20,ringPos+82,260,5);
+        rect(ringPos+41-20,ringPos+105,5,155);
+        rect(ringPos+313-20,ringPos+105,5,155);
+        rect(ringPos+50-20,ringPos+102,260,5);
         //Middle Rope
         fill(247, 247, 247);
-        rect(ringPos+313-20,ringPos+250,5,8);
-        rect(ringPos+41-20,ringPos+250,5,8);
-        rect(ringPos+50-20,ringPos+99,260,5);
+        rect(ringPos+313-20,ringPos+270,5,8);
+        rect(ringPos+41-20,ringPos+270,5,8);
+        rect(ringPos+50-20,ringPos+119,260,5);
         //Bottom Rope
         fill(27, 186, 2);
-        rect(ringPos+313-20,ringPos+267,5,8);
-        rect(ringPos+41-20,ringPos+267,5,8);
-        rect(ringPos+50-20,ringPos+117,260,5);
-        }; 
-//---------------------------------------------------------------------------------
-//---------------------------------------------------------------------------------
+        rect(ringPos+313-20,ringPos+287,5,8);
+        rect(ringPos+41-20,ringPos+287,5,8);
+        rect(ringPos+50-20,ringPos+137,260,5);
+        };
+        
+        
+    var draw = function() {
+        background(51, 51, 59);
+        fill(58, 66, 176);
+        textSize(28);
+        text("Player 1", 60, 32);
+        text("Player 2", 220, 32);
 
         drawRing();
 
@@ -448,11 +450,11 @@ var health2 = new healthBar(x1 + 100, y1  - 150, healthBarWidth - 60, healthBarH
     }
     
 //Keep Player1 In The Ring   
-    if(player1Y > 210){
-        player1Y = 210;
+    if(player1Y > 250){
+        player1Y = 250;
     }
-    if(player1Y < 50){
-        player1Y = 50;
+    if(player1Y < 100){
+        player1Y = 100;
     }
     if(player1X > 275){
         player1X = 275;
@@ -461,11 +463,11 @@ var health2 = new healthBar(x1 + 100, y1  - 150, healthBarWidth - 60, healthBarH
         player1X = 35;
     }
 //Keep Player2 In The Ring
-    if(player2Y > 210){
-        player2Y = 210;
+    if(player2Y > 250){
+        player2Y = 250;
     }
-    if(player2Y < 50){
-        player2Y = 50;
+    if(player2Y < 100){
+        player2Y = 100;
     }
     if(player2X > 275){
         player2X = 275;
@@ -518,5 +520,3 @@ var health2 = new healthBar(x1 + 100, y1  - 150, healthBarWidth - 60, healthBarH
 
 
  };
- 
-
