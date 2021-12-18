@@ -1,0 +1,123 @@
+var drawtopPunch = function (BitX,BitY,bitHeight){
+//Top
+fill(23, 99, 50);
+rect(BitX + bitHeight/150 * 75,BitY+ bitHeight/150 *129, bitHeight/150 *50, bitHeight/150 *65);
+rect(BitX + bitHeight/150 * 118,BitY+bitHeight/150 *126, bitHeight/150 *70,bitHeight/150 *25,bitHeight/150 * 20);
+rect(BitX + bitHeight/150 * 59,BitY+bitHeight/150 *126,bitHeight/150 * 25,bitHeight/150 * 60,bitHeight/150 * 20);
+//Pants
+fill(61, 57, 46);
+rect(BitX + bitHeight/150 * 75,BitY+bitHeight/150 *191,bitHeight/150 * 50,bitHeight/150 * 82);
+line(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *272,BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *200);
+fill(0, 0, 0);
+ellipse(BitX + bitHeight/150 * 100,BitY+bitHeight/150 *194,bitHeight/150 * 5,bitHeight/150 * 5);
+};
+var drawbitheadPunch = function (BitX,BitY,bitHeight){
+//Head
+fill(224, 172, 105);
+ellipse(BitX + bitHeight/150 * 142, BitY+ bitHeight/150 *85,bitHeight/150 * 18,bitHeight/150 * 26);
+ellipse(BitX + bitHeight/150 * 58,BitY+ bitHeight/150 * 85,bitHeight/150 * 18,bitHeight/150 * 26);
+ellipse(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *91,bitHeight/150 * 86,bitHeight/150 * 100);
+//Eye 1
+fill(255, 255, 255);
+ellipse(BitX + bitHeight/150 * 120,BitY+ bitHeight/150 *94,bitHeight/150 * 20,bitHeight/150 * 20);
+ellipse(BitX + bitHeight/150 * 80,BitY+ bitHeight/150 *94,bitHeight/150 * 20,bitHeight/150 * 20);
+//Eye 2
+fill(135, 82, 2);
+ellipse(BitX + bitHeight/150 * 120,BitY+ bitHeight/150 *94,bitHeight/150 * 13,bitHeight/150 * 13);
+ellipse(BitX + bitHeight/150 * 80,BitY+ bitHeight/150 *94,bitHeight/150 * 13,bitHeight/150 * 13);
+//Eye 3
+fill(0, 0, 0);
+ellipse(BitX + bitHeight/150 * 120,BitY+ bitHeight/150 *94,bitHeight/150 * 8,bitHeight/150 * 8);
+ellipse(BitX + bitHeight/150 * 80,BitY+ bitHeight/150 *94,bitHeight/150 * 8,bitHeight/150 * 8);
+//Eye 4
+fill(250, 250, 250);
+ellipse(BitX + bitHeight/150 * 117,BitY+ bitHeight/150 *92,bitHeight/150 * 4,bitHeight/150 * 4);
+ellipse(BitX + bitHeight/150 * 77,BitY+ bitHeight/150 *92,bitHeight/150 * 4,bitHeight/150 * 4);
+//Beanie
+fill(124, 124, 125);
+ellipse(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *51,bitHeight/150 *78,bitHeight/150 *42);
+rect(BitX + bitHeight/150 * 58,BitY+ bitHeight/150 *55,bitHeight/150 *83,bitHeight/150 *18);
+fill(0, 0, 0);
+ellipse(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *29,bitHeight/150 *10,bitHeight/150 *5);
+//Nose
+fill(219, 168, 105);
+ellipse(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *109,bitHeight/150 *17,bitHeight/150 *12);
+//Lips
+fill(255, 129, 112);
+ellipse(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *126,bitHeight/150 *33,bitHeight/150 *10);
+line(BitX + bitHeight/150 * 115,BitY+ bitHeight/150 *125,BitX + bitHeight/150 * 84,BitY+ bitHeight/150 *125);
+//Facial Hair
+fill(0, 0, 0);
+ellipse(BitX + bitHeight/150 * 120,BitY+ bitHeight/150 *79,bitHeight/150 *19,bitHeight/150 *3);
+ellipse(BitX + bitHeight/150 * 80,BitY+ bitHeight/150 *79,bitHeight/150 *19,bitHeight/150 *3);
+triangle(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *144,BitX + bitHeight/150 * 120,BitY+ bitHeight/150 *135,BitX + bitHeight/150 * 80,BitY+ bitHeight/150 *135);
+rect(BitX + bitHeight/150 * 87,BitY+ bitHeight/150 *117,bitHeight/150 *25,bitHeight/150 *1);
+fill(255, 0, 0);
+ellipse(BitX + bitHeight/150 * 70,BitY+bitHeight/150 *120,bitHeight/150 * 40,bitHeight/150 * 39);
+ellipse(BitX + bitHeight/150 * 185,BitY+bitHeight/150 *137,bitHeight/150 * 40,bitHeight/150 * 39);
+};
+var drawtop = function (BitX,BitY,bitHeight){
+//Top
+fill(23, 99, 50);
+rect(BitX + bitHeight/150 * 75,BitY+ bitHeight/150 *129, bitHeight/150 *50, bitHeight/150 *65);
+rect(BitX + bitHeight/150 * 118,BitY+bitHeight/150 *126, bitHeight/150 *25,bitHeight/150 *60,bitHeight/150 * 20);
+rect(BitX + bitHeight/150 * 59,BitY+bitHeight/150 *126,bitHeight/150 * 25,bitHeight/150 * 60,bitHeight/150 * 20);
+//Pants
+fill(61, 57, 46);
+rect(BitX + bitHeight/150 * 75,BitY+bitHeight/150 *191,bitHeight/150 * 50,bitHeight/150 * 82);
+line(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *272,BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *200);
+fill(0, 0, 0);
+ellipse(BitX + bitHeight/150 * 100,BitY+bitHeight/150 *194,bitHeight/150 * 5,bitHeight/150 * 5);
+};
+var drawbithead = function (BitX,BitY,bitHeight){
+//Head
+fill(224, 172, 105);
+ellipse(BitX + bitHeight/150 * 142, BitY+ bitHeight/150 *85,bitHeight/150 * 18,bitHeight/150 * 26);
+ellipse(BitX + bitHeight/150 * 58,BitY+ bitHeight/150 * 85,bitHeight/150 * 18,bitHeight/150 * 26);
+ellipse(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *91,bitHeight/150 * 86,bitHeight/150 * 100);
+//Eye 1
+fill(255, 255, 255);
+ellipse(BitX + bitHeight/150 * 120,BitY+ bitHeight/150 *94,bitHeight/150 * 20,bitHeight/150 * 20);
+ellipse(BitX + bitHeight/150 * 80,BitY+ bitHeight/150 *94,bitHeight/150 * 20,bitHeight/150 * 20);
+//Eye 2
+fill(135, 82, 2);
+ellipse(BitX + bitHeight/150 * 120,BitY+ bitHeight/150 *94,bitHeight/150 * 13,bitHeight/150 * 13);
+ellipse(BitX + bitHeight/150 * 80,BitY+ bitHeight/150 *94,bitHeight/150 * 13,bitHeight/150 * 13);
+//Eye 3
+fill(0, 0, 0);
+ellipse(BitX + bitHeight/150 * 120,BitY+ bitHeight/150 *94,bitHeight/150 * 8,bitHeight/150 * 8);
+ellipse(BitX + bitHeight/150 * 80,BitY+ bitHeight/150 *94,bitHeight/150 * 8,bitHeight/150 * 8);
+//Eye 4
+fill(250, 250, 250);
+ellipse(BitX + bitHeight/150 * 117,BitY+ bitHeight/150 *92,bitHeight/150 * 4,bitHeight/150 * 4);
+ellipse(BitX + bitHeight/150 * 77,BitY+ bitHeight/150 *92,bitHeight/150 * 4,bitHeight/150 * 4);
+//Beanie
+fill(124, 124, 125);
+ellipse(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *51,bitHeight/150 *78,bitHeight/150 *42);
+rect(BitX + bitHeight/150 * 58,BitY+ bitHeight/150 *55,bitHeight/150 *83,bitHeight/150 *18);
+fill(0, 0, 0);
+ellipse(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *29,bitHeight/150 *10,bitHeight/150 *5);
+//Nose
+fill(219, 168, 105);
+ellipse(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *109,bitHeight/150 *17,bitHeight/150 *12);
+//Lips
+fill(255, 129, 112);
+ellipse(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *126,bitHeight/150 *33,bitHeight/150 *10);
+line(BitX + bitHeight/150 * 115,BitY+ bitHeight/150 *125,BitX + bitHeight/150 * 84,BitY+ bitHeight/150 *125);
+//Facial Hair
+fill(0, 0, 0);
+ellipse(BitX + bitHeight/150 * 120,BitY+ bitHeight/150 *79,bitHeight/150 *19,bitHeight/150 *3);
+ellipse(BitX + bitHeight/150 * 80,BitY+ bitHeight/150 *79,bitHeight/150 *19,bitHeight/150 *3);
+triangle(BitX + bitHeight/150 * 100,BitY+ bitHeight/150 *144,BitX + bitHeight/150 * 120,BitY+ bitHeight/150 *135,BitX + bitHeight/150 * 80,BitY+ bitHeight/150 *135);
+rect(BitX + bitHeight/150 * 87,BitY+ bitHeight/150 *117,bitHeight/150 *25,bitHeight/150 *1);
+fill(255, 0, 0);
+ellipse(BitX + bitHeight/150 * 70,BitY+bitHeight/150 *120,bitHeight/150 * 40,bitHeight/150 * 39);
+ellipse(BitX + bitHeight/150 * 135,BitY+bitHeight/150 *120,bitHeight/150 * 40,bitHeight/150 * 39);
+};
+
+drawtopPunch(50,50,70);
+drawbitheadPunch(50,50,70);
+    
+drawtop(50,180,70);
+drawbithead(50,180,70);
+    
